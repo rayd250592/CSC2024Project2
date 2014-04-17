@@ -25,7 +25,7 @@
         <div id="contentwrap">
         <div id="content">
      
-		<h1 style="margin-left:10px" > Home </h1>
+		<h1 style="margin-left:10px; font-size:x-large;" > Home </h1>
 		
 		
 

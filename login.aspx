@@ -25,7 +25,7 @@
         <div id="contentwrap">
         <div id="content">
      
-		<h1 style="margin-left:10px" > Login </h1>
+		<h1 style="margin-left:10px; font-size:x-large;" > Login </h1>
 		
 		
             <asp:LoginView ID="logins" runat="server"></asp:LoginView>
