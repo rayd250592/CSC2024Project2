@@ -11,6 +11,7 @@
 <ul>
 
 <li class='active'><a href='login.aspx'><span>Login</span></a></li>
+     <li class='active'><a href='signup.aspx'><span>Sign Up</span></a></li>
    <li class='active'><a href='index.php'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>About</span></a>
       <ul>

@@ -25,8 +25,7 @@
         <div id="contentwrap">
         <div id="content">
      
-		<br />
-        <br />
+		
 		
             <h1 style="margin-left:10px; font-size:x-large;" > Sign Up </h1>
             <form runat="server">
