@@ -28,13 +28,9 @@
 		<br />
         <br />
 		
-            
+            <h1 style="margin-left:10px; font-size:x-large;" > Sign Up </h1>
             <form runat="server">
-            <asp:Login ID="Login1" runat="server">
-
-
-            </asp:Login>
-
+ 
 
         </form>
             
