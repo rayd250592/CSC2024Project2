@@ -1,12 +1,12 @@
-﻿ <div id="rightcolumnwrap">
+﻿
+     <div id="rightcolumnwrap">
         <div id="rightcolumn">
-          This is ad space
-              <p>This is the Menu</p>
-              <p>This is the Menu</p>
-              <p>This is the Menu</p>
-              <p>This is the Menu</p>
-              <p>This is the Menu</p>
-              <p>This is the Menu</p>
-        </div>
-        </div>
+       
+           <img src="images/ad_images/ad1.png"  style="width:150px; height:350px;"/>
+        
+        </div>      
+        </div>  
 </div>
+
+
+
