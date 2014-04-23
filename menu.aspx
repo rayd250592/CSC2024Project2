@@ -13,11 +13,11 @@
 <li class='active'><a href='login.aspx'><span>Login</span></a></li>
      <li class='active'><a href='signup.aspx'><span>Sign Up</span></a></li>
    <li class='active'><a href='default.aspx'><span>Home</span></a></li>
-   <li class='has-sub'><a href='#'><span>About</span></a>
+   <li class='has-sub'><a href='#'><span>News</span></a>
       <ul>
-       <li><a href='about.php'>About the Company</a></li>
-         <li><a href="company_history.php">Company History</a></li>
-         <li class='last'><a href="cust_charter.php"><span>Customer Charter</span></a></li>
+       <li><a href='about.php'>Microsoft</a></li>
+         <li><a href="company_history.php">Google</a></li>
+         <li class='last'><a href="cust_charter.php"><span>Apple</span></a></li>
       </ul>
    </li>
       <li class='last'><a href='products.php'><span>Products</span></a></li>
