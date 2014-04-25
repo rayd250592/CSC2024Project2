@@ -15,9 +15,9 @@
    <li class='active'><a href='default.aspx'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>News</span></a>
       <ul>
-       <li><a href='about.php'>Microsoft</a></li>
-         <li><a href="company_history.php">Google</a></li>
-         <li class='last'><a href="cust_charter.php"><span>Apple</span></a></li>
+       <li><a href='Microsoft.aspx'>Microsoft</a></li>
+         <li><a href="Google.aspx">Google</a></li>
+         <li class='last'><a href="Apple.aspx"><span>Apple</span></a></li>
       </ul>
    </li>
       <li class='last'><a href='products.php'><span>Products</span></a></li>
