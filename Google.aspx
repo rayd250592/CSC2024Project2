@@ -1,4 +1,20 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Google.aspx.cs" Inherits="Apple" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+    </div>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
 <html>
 <head>
 <!--#include file="header.aspx"-->
@@ -8,7 +24,7 @@
 <link rel="stylesheet" type="text/css" href="styles/tables.css" />
 </head>
 <body style="background-color:silver">
-    <form id="form1" runat="server">
+    <form id="form2" runat="server">
     <div id="wrapper">
         <div id="headerwrap">
      
@@ -26,7 +42,7 @@
         <div id="contentwrap">
         <div id="content">
      
-		<h1 style="margin-left:10px; font-size:x-large;" > Home </h1>
+		<h1 style="margin-left:10px; font-size:x-large;" > Google </h1>
 
             <br />
             <br />

@@ -4,16 +4,16 @@
 
     tinyMCE.init({
         selector: "textarea",
-            mode: "textareas",
-            theme: "simple",
-            editor_selector: "mceSimple"
-        });
+        mode: "textareas",
+        theme: "simple",
+        editor_selector: "mceSimple"
+    });
 
-        tinyMCE.init({
-            mode: "textareas",
-            theme: "advanced",
-            editor_selector: "mceAdvanced"
-        });
+    tinyMCE.init({
+        mode: "textareas",
+        theme: "advanced",
+        editor_selector: "mceAdvanced"
+    });
 
     </script>
 
