@@ -34,59 +34,99 @@
         <div id="content">
      
 		<h1 style="margin-left:10px; font-size:x-large;" > Home </h1>
-		
-		
             <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
                 <AlternatingItemTemplate>
-                    <span style="">category:
+                    <span style="">article_id:
+                    <asp:Label ID="article_idLabel" runat="server" Text='<%# Eval("article_id") %>' />
+                    <br />
+                    headline:
+                        <asp:HyperLink ID="HyperLink1" runat="server"
+                            NavigateUrl='<%# "Microsoft.aspx?id=" + Convert.ToString(Eval("article_id"))%>' >
+
+                       
+                    <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
+                             </asp:HyperLink>
+                    <br />
+                    tagline:
+                    <asp:Label ID="taglineLabel" runat="server" Text='<%# Eval("tagline") %>' />
+                    <br />
+                    category:
                     <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
                     <br />
                     datetime:
                     <asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
                     <br />
-                    headline:
-                     <asp:HyperLink ID="HyperLink1" runat="server"
-                            NavigateUrl='<%#"Microsoft.aspx?id=" + Eval("article_id")%>' >            
-                    <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
-                                   </asp:HyperLink><br />tagline: <asp:Label ID="taglineLabel" runat="server" Text='<%# Eval("tagline") %>' />
+                    isapproved:
+                    <asp:Label ID="isapprovedLabel" runat="server" Text='<%# Eval("isapproved") %>' />
                     <br />
 <br /></span>
                 </AlternatingItemTemplate>
                 <EditItemTemplate>
-                    <span style="">category: <asp:TextBox ID="categoryTextBox" runat="server" Text='<%# Bind("category") %>' />
+                    <span style="">article_id:
+                    <asp:TextBox ID="article_idTextBox" runat="server" Text='<%# Bind("article_id") %>' />
                     <br />
-                    datetime: <asp:TextBox ID="datetimeTextBox" runat="server" Text='<%# Bind("datetime") %>' />
+                    headline:
+                    <asp:TextBox ID="headlineTextBox" runat="server" Text='<%# Bind("headline") %>' />
                     <br />
-                    headline: <asp:TextBox ID="headlineTextBox" runat="server" Text='<%# Bind("headline") %>' />
+                    tagline:
+                    <asp:TextBox ID="taglineTextBox" runat="server" Text='<%# Bind("tagline") %>' />
                     <br />
-                    tagline: <asp:TextBox ID="taglineTextBox" runat="server" Text='<%# Bind("tagline") %>' />
+                    category:
+                    <asp:TextBox ID="categoryTextBox" runat="server" Text='<%# Bind("category") %>' />
+                    <br />
+                    datetime:
+                    <asp:TextBox ID="datetimeTextBox" runat="server" Text='<%# Bind("datetime") %>' />
+                    <br />
+                    isapproved:
+                    <asp:TextBox ID="isapprovedTextBox" runat="server" Text='<%# Bind("isapproved") %>' />
                     <br />
                     <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
                     <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
                     <br /><br /></span>
                 </EditItemTemplate>
                 <EmptyDataTemplate>
-                    <span>No data was returned.</span></EmptyDataTemplate><InsertItemTemplate>
-                    <span style="">category: <asp:TextBox ID="categoryTextBox" runat="server" Text='<%# Bind("category") %>' />
-                    <br />datetime: <asp:TextBox ID="datetimeTextBox" runat="server" Text='<%# Bind("datetime") %>' />
-                    <br />headline: <asp:TextBox ID="headlineTextBox" runat="server" Text='<%# Bind("headline") %>' />
-                    <br />tagline: <asp:TextBox ID="taglineTextBox" runat="server" Text='<%# Bind("tagline") %>' />
+                    <span>No data was returned.</span>
+                </EmptyDataTemplate>
+                <InsertItemTemplate>
+                    <span style="">article_id:
+                    <asp:TextBox ID="article_idTextBox" runat="server" Text='<%# Bind("article_id") %>' />
+                    <br />headline:
+                    <asp:TextBox ID="headlineTextBox" runat="server" Text='<%# Bind("headline") %>' />
+                    <br />tagline:
+                    <asp:TextBox ID="taglineTextBox" runat="server" Text='<%# Bind("tagline") %>' />
+                    <br />category:
+                    <asp:TextBox ID="categoryTextBox" runat="server" Text='<%# Bind("category") %>' />
+                    <br />datetime:
+                    <asp:TextBox ID="datetimeTextBox" runat="server" Text='<%# Bind("datetime") %>' />
+                    <br />isapproved:
+                    <asp:TextBox ID="isapprovedTextBox" runat="server" Text='<%# Bind("isapproved") %>' />
                     <br />
                     <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
                     <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
                     <br /><br /></span>
                 </InsertItemTemplate>
                 <ItemTemplate>
-                    <span style="">category: <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                    <span style="">article_id:
+                    <asp:Label ID="article_idLabel" runat="server" Text='<%# Eval("article_id") %>' />
                     <br />
-                    datetime: <asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
+                    headline:
+                         <asp:HyperLink ID="HyperLink1" runat="server"
+                            NavigateUrl='<%# "Microsoft.aspx?id=" + Convert.ToString(Eval("article_id"))%>' >
+                    <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
+                         </asp:HyperLink>
+
                     <br />
-                    headline: <asp:HyperLink ID="HyperLink1" runat="server"
-                            NavigateUrl='<%#"Microsoft.aspx?id=" + Eval("article_id")%>' >            
-                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("headline") %>' />
-                                   </asp:HyperLink><asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
+                    tagline:
+                    <asp:Label ID="taglineLabel" runat="server" Text='<%# Eval("tagline") %>' />
                     <br />
-                    tagline: <asp:Label ID="taglineLabel" runat="server" Text='<%# Eval("tagline") %>' />
+                    category:
+                    <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                    <br />
+                    datetime:
+                    <asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
+                    <br />
+                    isapproved:
+                    <asp:Label ID="isapprovedLabel" runat="server" Text='<%# Eval("isapproved") %>' />
                     <br />
 <br /></span>
                 </ItemTemplate>
@@ -103,19 +143,28 @@
                     </div>
                 </LayoutTemplate>
                 <SelectedItemTemplate>
-                    <span style="">category: <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                    <span style="">article_id:
+                    <asp:Label ID="article_idLabel" runat="server" Text='<%# Eval("article_id") %>' />
                     <br />
-                    datetime: <asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
+                    headline:
+                    <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
                     <br />
-                    headline: <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
+                    tagline:
+                    <asp:Label ID="taglineLabel" runat="server" Text='<%# Eval("tagline") %>' />
                     <br />
-                    tagline: <asp:Label ID="taglineLabel" runat="server" Text='<%# Eval("tagline") %>' />
+                    category:
+                    <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                    <br />
+                    datetime:
+                    <asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
+                    <br />
+                    isapproved:
+                    <asp:Label ID="isapprovedLabel" runat="server" Text='<%# Eval("isapproved") %>' />
                     <br />
 <br /></span>
                 </SelectedItemTemplate>
             </asp:ListView>
-
-
+		
              <div id="rightcolumnwrap">
                  
             <!--#include file="ads.aspx"-->
@@ -130,7 +179,7 @@
         </div>
     </div>
         </div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringImage %>" SelectCommand="SELECT [category], [datetime], [headline], [tagline], [article_id] FROM [Article]" OnSelecting="SqlDataSource1_Selecting"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringImage %>" SelectCommand="SELECT [article_id], [headline], [tagline], [category], [datetime], [isapproved] FROM [Article]"></asp:SqlDataSource>
     </form>
 </body>
 </html>
