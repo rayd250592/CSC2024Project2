@@ -307,6 +307,116 @@
                 </SelectedItemTemplate>
             </asp:ListView>
 
+
+            <asp:ListView ID="ListView3" runat="server" DataSourceID="sqlallapproved" >
+                <AlternatingItemTemplate>
+                    <span style="">headline:
+                    <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
+                    <br />
+                    story:
+                    <asp:Label ID="storyLabel" runat="server" Text='<%# Eval("story") %>' />
+                    <br />
+                    imagepath:
+                    <asp:Label ID="imagepathLabel" runat="server" Text='<%# Eval("imagepath") %>' />
+                    <br />
+                    category:
+                    <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                    <br />
+                    author:
+                    <asp:Label ID="authorLabel" runat="server" Text='<%# Eval("author") %>' />
+                    <br />
+<br /></span>
+                </AlternatingItemTemplate>
+                <EditItemTemplate>
+                    <span style="">headline:
+                    <asp:TextBox ID="headlineTextBox" runat="server" Text='<%# Bind("headline") %>' />
+                    <br />
+                    story:
+                    <asp:TextBox ID="storyTextBox" runat="server" Text='<%# Bind("story") %>' />
+                    <br />
+                    imagepath:
+                    <asp:TextBox ID="imagepathTextBox" runat="server" Text='<%# Bind("imagepath") %>' />
+                    <br />
+                    category:
+                    <asp:TextBox ID="categoryTextBox" runat="server" Text='<%# Bind("category") %>' />
+                    <br />
+                    author:
+                    <asp:TextBox ID="authorTextBox" runat="server" Text='<%# Bind("author") %>' />
+                    <br />
+                    <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
+                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
+                    <br /><br /></span>
+                </EditItemTemplate>
+                <EmptyDataTemplate>
+                    <span>No data was returned.</span>
+                </EmptyDataTemplate>
+                <InsertItemTemplate>
+                    <span style="">headline:
+                    <asp:TextBox ID="headlineTextBox" runat="server" Text='<%# Bind("headline") %>' />
+                    <br />story:
+                    <asp:TextBox ID="storyTextBox" runat="server" Text='<%# Bind("story") %>' />
+                    <br />imagepath:
+                    <asp:TextBox ID="imagepathTextBox" runat="server" Text='<%# Bind("imagepath") %>' />
+                    <br />category:
+                    <asp:TextBox ID="categoryTextBox" runat="server" Text='<%# Bind("category") %>' />
+                    <br />author:
+                    <asp:TextBox ID="authorTextBox" runat="server" Text='<%# Bind("author") %>' />
+                    <br />
+                    <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
+                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
+                    <br /><br /></span>
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <span style="">headline:
+                    <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
+                    <br />
+                    story:
+                    <asp:Label ID="storyLabel" runat="server" Text='<%# Eval("story") %>' />
+                    <br />
+                    imagepath:
+                   
+                   <asp:Image ID="artimage" runat="server" ImageUrl='<%# "secure/" + Eval("imagepath") %>' Width="200px" />    
+                    
+                    category:
+                    <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                    <br />
+                    author:
+                    <asp:Label ID="authorLabel" runat="server" Text='<%# Eval("author") %>' />
+                    <br />
+<br /></span>
+                </ItemTemplate>
+                <LayoutTemplate>
+                    <div id="itemPlaceholderContainer" runat="server" style="">
+                        <span runat="server" id="itemPlaceholder" />
+                    </div>
+                    <div style="">
+                        <asp:DataPager ID="DataPager1" runat="server">
+                            <Fields>
+                                <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
+                            </Fields>
+                        </asp:DataPager>
+                    </div>
+                </LayoutTemplate>
+                <SelectedItemTemplate>
+                    <span style="">headline:
+                    <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
+                    <br />
+                    story:
+                    <asp:Label ID="storyLabel" runat="server" Text='<%# Eval("story") %>' />
+                    <br />
+                    imagepath:
+                    <asp:Label ID="imagepathLabel" runat="server" Text='<%# Eval("imagepath") %>' />
+                    <br />
+                    category:
+                    <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                    <br />
+                    author:
+                    <asp:Label ID="authorLabel" runat="server" Text='<%# Eval("author") %>' />
+                    <br />
+<br /></span>
+                </SelectedItemTemplate>
+            </asp:ListView>
+
              <div id="rightcolumnwrap">
               
             <!--#include file="ads.aspx"-->
@@ -323,6 +433,12 @@
             <asp:SqlDataSource ID="sqlcat" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringImage %>" SelectCommand="SELECT [article_id], [headline], [tagline], [category], [story] FROM [Article] WHERE ([category] = @category)">
                 <SelectParameters>
                     <asp:QueryStringParameter Name="category" QueryStringField="category" Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        
+            <asp:SqlDataSource ID="sqlallapproved" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringImage %>" SelectCommand="SELECT [headline], [story], [imagepath], [category], [author] FROM [Article] WHERE ([isapproved] = @isapproved)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="1" Name="isapproved" Type="String" />
                 </SelectParameters>
             </asp:SqlDataSource>
         
