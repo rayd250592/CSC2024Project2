@@ -1,22 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Apple.aspx.cs" Inherits="Apple" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
+
 <!--#include file="header.aspx"-->
 <title>Raymond's Tech News</title>
 
@@ -145,7 +130,7 @@
         
     <!--#include file="footer.aspx"-->
         
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringImage %>" SelectCommand="SELECT [article_id], [headline], [tagline], [category] FROM [Article]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringImage %>" SelectCommand="SELECT [article_id], [headline], [tagline], [category] FROM [Article]" ></asp:SqlDataSource>
         
         </div>
     </div>

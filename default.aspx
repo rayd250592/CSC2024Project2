@@ -1,10 +1,4 @@
 ﻿<!DOCTYPE html>
-<script runat="server">
-
-    Protected Sub SqlDataSource1_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs)
-
-    End Sub
-</script>
 
 <html>
 <head>
@@ -18,7 +12,6 @@
     <form id="form1" runat="server">
     <div id="wrapper">
         <div id="headerwrap">
-     
                   
 
 
