@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="login" %>
+
+<!DOCTYPE html>
 <head>
 <!--#include file="header.aspx"-->
 <title>Raymond's Tech News</title>
@@ -24,19 +25,19 @@
         </div>
         <div id="contentwrap">
         <div id="content">
+
+            <p>&nbsp;</p>
+     
+            
+            <form id="Form1" runat="server">
+                <asp:Login ID="Login1" runat="server" OnLoggedIn="Login1_LoggedIn1"/>
+                </asp:Login>
      
 		<br />
         <br />
 		
             
-            <form runat="server">
-            <asp:Login ID="Login1" runat="server">
-
-
-            </asp:Login>
-
-
-        </form>
+                </form>
             
             
                          <div id="rightcolumnwrap">

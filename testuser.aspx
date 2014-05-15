@@ -30,16 +30,6 @@
             <h1 style="margin-left:10px; font-size:x-large;" > Sign Up </h1>
          
             
-            <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
-                <WizardSteps>
-                    <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
-                    </asp:CreateUserWizardStep>
-                    <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
-                    </asp:CompleteWizardStep>
-                </WizardSteps>
-            </asp:CreateUserWizard>
-            
-            
                          <div id="rightcolumnwrap">
               
             <!--#include file="ads.aspx"-->
