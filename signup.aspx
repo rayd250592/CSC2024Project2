@@ -28,7 +28,11 @@
 		
 		
             <h1 style="margin-left:10px; font-size:x-large;" > Sign Up </h1>
+
+            <br />
+            <br />
          
+            <form runat="server">
             
             <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
                 <WizardSteps>
@@ -39,7 +43,7 @@
                 </WizardSteps>
             </asp:CreateUserWizard>
             
-            
+            </form>
                          <div id="rightcolumnwrap">
               
             <!--#include file="ads.aspx"-->
