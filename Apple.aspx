@@ -48,14 +48,15 @@
 
             <asp:ListView ID="ListView1" runat="server" DataSourceID="sqlallapproved">
                 <AlternatingItemTemplate>
-                    <span style="">headline:
+                    <span style=""><strong>Headline:</strong>
                     <asp:Label ID="headlineLabel" runat="server" Text='<%# Eval("headline") %>' />
                     <br />
                     story:
                     <asp:Label ID="storyLabel" runat="server" Text='<%# Eval("story") %>' />
                     <br />
-                    imagepath:
-                    <asp:Label ID="imagepathLabel" runat="server" Text='<%# Eval("imagepath") %>' />
+                    
+                          <asp:Image ID="artimage" runat="server" ImageUrl='<%# "secure/" + Eval("imagepath") %>' width="200px" />
+
                     <br />
                     category:
                     <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
@@ -143,8 +144,9 @@
                     story:
                     <asp:Label ID="storyLabel" runat="server" Text='<%# Eval("story") %>' />
                     <br />
-                    imagepath:
-                    <asp:Label ID="imagepathLabel" runat="server" Text='<%# Eval("imagepath") %>' />
+                    
+                          <asp:Image ID="artimage" runat="server" ImageUrl='<%# "secure/" + Eval("imagepath") %>' width="200px" />
+
                     <br />
                     category:
                     <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />

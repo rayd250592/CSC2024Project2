@@ -108,7 +108,7 @@ public partial class secure_createarticle : System.Web.UI.Page
             String category = cat.SelectedValue;
             String isapproved = "0";
 
-            string author =  Membership.GetUser(HttpContext.Current.User.Identity.Name).ProviderUserKey.ToString();
+            string author = Membership.GetUser(HttpContext.Current.User.Identity.Name).ToString();
     
 
             //Response.Write("COnnection made");

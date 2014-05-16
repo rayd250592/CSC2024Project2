@@ -26,9 +26,9 @@ public partial class secure_editaccount : System.Web.UI.Page
 
         foreach (ListViewItem item in ListView1.Items)
         {
-            Label auth = (Label)item.FindControl("author_idLabel");
+            //Label auth = (Label)item.FindControl("Label1");
             // Response.Write(auth);
-            string auth_id = auth.Text;
+            string auth_id = Label1.Text;
 
             string firstname = ((TextBox)item.FindControl("firstnameLabel")).Text.ToString();
             string lastname = ((TextBox)item.FindControl("lastnameLabel")).Text.ToString();

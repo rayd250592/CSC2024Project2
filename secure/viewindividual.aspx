@@ -93,7 +93,7 @@
                 </InsertItemTemplate>
                 <ItemTemplate>
 
-                    <asp:Label ID="artid" runat="server" Text='<%# Eval("article_id") %>' />
+                    <!--<asp:Label ID="artid" runat="server" Text='<%# Eval("article_id") %>' />!-->
 
                     <br />
                     <br />
