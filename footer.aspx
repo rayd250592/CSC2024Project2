@@ -6,10 +6,17 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <link rel="stylesheet" type="text/css" href="styles/css.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
 
+ 
+    
  
 <div id="footer">
 
@@ -44,6 +51,26 @@
 
 
 </div>
+        
+  
+ 
+    </form>
+
+  
+ 
+
+
+  
+ 
+    <table class="auto-style1">
+        
+            <img src="images/ad_images/finalad1.png" style="width:991px" />
+        
+    </table>
+
+  
+ 
+
 
   
  

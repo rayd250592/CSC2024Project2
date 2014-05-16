@@ -15,9 +15,11 @@ public partial class login : System.Web.UI.Page
     protected void Login1_LoggedIn1(object sender, EventArgs e)
     {
 
-        
+
         if (Roles.IsUserInRole(Login1.UserName, "admin"))
             Response.Redirect("~/secure/editor/admin.aspx");
+        else if (Roles.IsUserInRole(Login1.UserName, "Author"))
+            Response.Redirect("~/secure/authorhome.aspx");
       
     }
 }

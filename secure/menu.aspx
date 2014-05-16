@@ -10,17 +10,12 @@
 <div id='cssmenu'>
 <ul>
 
-<li class='active'><a href='login.aspx'><span>Login</span></a></li>
-     <li class='active'><a href='signup.aspx'><span>Sign Up</span></a></li>
-   <li class='active'><a href='default.aspx'><span>Home</span></a></li>
-   <li class='has-sub'><a href='#'><span>News</span></a>
-      <ul>
-       <li><a href='Microsoft.aspx'>Microsoft</a></li>
-         <li><a href="Google.aspx">Google</a></li>
-         <li class='last'><a href="Apple.aspx"><span>Apple</span></a></li>
-      </ul>
-   </li>
-      <li class='last'><a href='products.php'><span>Products</span></a></li>
+<li class='active'><a href='../logout.aspx'><span>Logout</span></a></li>
+    <li class='active'><a href='viewarticle.aspx'><span>Home</span></a></li>
+     <li class='active'><a href='editaccount.aspx'><span>Edit Account</span></a></li>
+       <li class='active'><a href='createarticle.aspx'><span>Create Article</span></a></li>
+           <li class='active'><a href='viewarticle.aspx'><span>View Articles</span></a></li>
+   
  
 </ul>
 </div>

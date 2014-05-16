@@ -10,6 +10,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 using System.Text.RegularExpressions;
+using System.Web.Security;
 
 public partial class secure_createarticle : System.Web.UI.Page
 {
@@ -107,11 +108,13 @@ public partial class secure_createarticle : System.Web.UI.Page
             String category = cat.SelectedValue;
             String isapproved = "0";
 
+            string author =  Membership.GetUser(HttpContext.Current.User.Identity.Name).ProviderUserKey.ToString();
+    
 
             //Response.Write("COnnection made");
             //Response.Write(category);
 
-            string query = "INSERT INTO Article(headline,tagline,story,imagepath,category, author,datetime,isapproved) VALUES ('" + title + "', '" + tag + "', '" + artice_story + "', '" + imgPath + "', '" + category + "', 'Raymond', '" + now + "', '" + isapproved + "')";
+            string query = "INSERT INTO Article(headline,tagline,story,imagepath,category, author,datetime,isapproved) VALUES ('" + title + "', '" + tag + "', '" + artice_story + "', '" + imgPath + "', '" + category + "', '" + author + "', '" + now + "', '" + isapproved + "')";
 
             SqlCommand insert = new SqlCommand(query, myconnection);
 

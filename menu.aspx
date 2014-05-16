@@ -11,7 +11,7 @@
 <ul>
 
 <li class='active'><a href='login.aspx'><span>Login</span></a></li>
-     <li class='active'><a href='signup.aspx'><span>Sign Up</span></a></li>
+  
    <li class='active'><a href='default.aspx'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>News</span></a>
       <ul>
@@ -20,7 +20,7 @@
          <li class='last'><a href="Apple.aspx"><span>Apple</span></a></li>
       </ul>
    </li>
-      <li class='last'><a href='products.php'><span>Products</span></a></li>
+
  
 </ul>
 </div>
