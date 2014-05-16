@@ -29,6 +29,21 @@
 		
             <h1 style="margin-left:10px; font-size:x-large;" > Author Home </h1>
 
+            
+            <br />
+            <br />
+
+            This is the administration page for registered authors. From the menu on the left, you can edit your details.
+
+            <br />
+            <br />
+
+            You can also create articles (these will need to be approved by the editor)
+
+             <br />
+            <br />
+
+            The final role of the editor is to view articles which have been submitted for approval.
             <form id="Form1" runat="server">
 
                

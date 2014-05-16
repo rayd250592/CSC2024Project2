@@ -28,7 +28,29 @@
      
 		<h1 style="margin-left:10px; font-size:x-large;" > Home </h1>
          
-		
+            
+            <br />
+            <br />
+
+            Welcome to Raymond's Tech News
+
+            <br />
+            <br />
+ 
+            Please feel free to browse the news categories on the left hand side.
+
+             <br />
+            <br />
+
+         We hope you enjoy your visit!
+
+
+            <br />
+            <br />
+
+
+            <strong>Raymond's Tech News Editorial Team
+             </strong>
              <div id="rightcolumnwrap">
                  
             <!--#include file="ads.aspx"-->
